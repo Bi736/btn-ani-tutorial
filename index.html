@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border animation button tutorial</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css ">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+
+    <div class="fixed">
+    
+        <div class="head">
+    
+            <div class="head-text">
+                <h1>DEVBS MASTERED</h1>
+            </div>
+            <div class="header-menu">
+                <ul>
+                    <li><a href="https://bi736.github.io/Dashboard/Home">Dashboard</a></li>
+                    <li><i class="fab fa-facebook-f"></i> </li>
+                    <li><i class="fab fa-twitter"></i> </li>
+                    <li><i class="fab fa-instagram"></i> </li>
+                </ul>
+            </div>
+        </div>
+    
+    
+    
+        <div class="content">
+            <div class="content-text">
+            <h1>HOW TO MAKE A BORDER ANIMATION BUTTON</h1>
+            <div class="border"></div>
+            </div>
+        </div>
+    
+    </div>
+
+
+
+    <div class="information">
+    <div class="why">
+        <h1>Why do you learn this kinds of button?</h1>
+
+        <div class="list">
+           <ul>
+               <li> <i class="fas fa-check-circle" id="check"></i> All full website has a lot of button</li>
+               <li> <i class="fas fa-check-circle" id="check"></i> To store your another link or page you must need a button</li>
+               <li> <i class="fas fa-check-circle" id="check"></i> Button is must needed for a website.For this reason every customers wants to get a unic design's button.</li>
+               <li> <i class="fas fa-check-circle" id="check"></i> Without a button a website never be a full website</li>
+               <li> <i class="fas fa-check-circle" id="check"></i> You can use button for variour purposes.Like get more information about product,next page,previous page,internet browser,vedio link,image link,social media link etc.</li>
+           </ul>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="solution">
+
+        <div class="left">
+            <img src="https://i.ibb.co/6XxdSzw/Captu56re.png">
+        </div>
+
+        <div class="middle">
+            <h1>For this design follow the CSS</h1>
+            <i class="fas fa-hand-point-right" id="right"></i>
+        </div>
+
+        <div class="right">
+
+            <div class="one">
+                <img src="https://i.ibb.co/dP7zSQ8/Capture1.png">
+            </div>
+            <div class="two">
+                <img src="https://i.ibb.co/DWkt6B2/Capture2.png">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="note">
+        <h2>Note : </h2>
+        <p>Use before and after for this style.Before used for button's up border and after is used for button's down border.Both border keep in a short width.Because when you hover the button the border will be 100% then.</p>
+        <h1>Ok....! Let's now see the hover action<i class="fas fa-hand-point-right" id="down"></i> </h1>
+    </div>
+
+
+
+    <div class="last">
+        <img src="https://i.ibb.co/54qGsmK/Capture3.png">
+    </div>
+
+
+
+    <div class="note">
+        <h2>Note : </h2>
+        <p>Now use the before's width 100% and after's width 100% & keep them in hover tag. Then you should use the transition for the animation delay</p>
+        <h1>Ok....! Let's now see the HTML & CSS code<i class="fas fa-hand-point-right" id="again"></i> </h1>
+        
+    </div>
+
+
+
+    
+<!------------------------------------------------------copy code-------------------------------------------------------->
+
+
+
+<div class="copy">
+
+
+    <h1>COPY CODE</h1>
+<div class="border"></div>
+
+<div class="html common">
+    <div class="name"><h2>HTML code:</h2></div>
+
+
+
+
+    <textarea id="html">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Border animation button</title>
+        
+        
+            <link rel="stylesheet" href="./style.css">
+        </head>
+        <body>
+            
+        
+        
+            <div class="head">
+        
+                <div class="btn">
+                    <a href="#">View more</a>
+                </div>
+        
+            </div>
+        
+        
+        </body>
+        </html>
+
+    </textarea>
+</div>
+    <div class="btn">
+<button id="htmlbtn">Copy HTML codes</button>
+</div>
+
+
+
+
+
+<!----------------------------------------------CSS START--------------------------------------------------------->
+
+
+
+<div class="html common">
+<div class="name"><h2>CSS code:</h2></div>
+
+
+<textarea id="css">
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-color: rgb(65, 64, 64);
+    }
+    
+    .head{
+        text-align: center;
+    }
+    
+    .btn{
+    margin-top: 150px;
+    position: relative;
+    display: inline-block;
+    
+    }
+    .btn a {
+        color: white;
+        padding: 10px 30px;
+        background-color:orange;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+    }
+    
+    .btn a::before{
+        content: "";
+        position: absolute;
+        top: -14px;
+        left: 0;
+        height: 2px;
+        width: 10%;
+        background-color:orange;
+        transition: 1s;
+    }
+    
+    .btn a::after{
+        content: "";
+        position: absolute;
+        bottom: -14px;
+        right: 0;
+        height: 2px;
+        width: 10%;
+        background-color: orange;
+        transition: 1s;
+    }
+    
+    
+    .btn a:hover::before{
+        width: 100%;
+    }
+    
+    
+    .btn a:hover::after{
+        width: 100%;
+    }
+    
+    
+    
+
+
+</textarea>
+
+
+<div class="btn">
+<button id="cssbtn">Copy CSS codes</button>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+<script>
+
+
+    let html = document.getElementById("html");
+    let css = document.getElementById("css");
+    
+    htmlbtn.onclick=function(){
+        html.select();
+        document.execCommand("copy");
+    }
+    
+    
+    cssbtn.onclick=function(){
+        css.select();
+        document.execCommand("copy");
+    }
+    
+    </script>
+
+
+    
+
+
+</body>
+</html>
